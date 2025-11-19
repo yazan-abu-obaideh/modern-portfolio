@@ -1,0 +1,13 @@
+.projects-list {
+  min-height: 200px;
+}
+
+.projects-list__placeholder {
+  color: #71717a;
+  font-style: italic;
+  padding: 2rem;
+  text-align: center;
+  background-color: #18181b;
+  border: 1px dashed #27272a;
+  border-radius: 8px;
+}

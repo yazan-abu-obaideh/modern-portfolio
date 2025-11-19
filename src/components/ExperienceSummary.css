@@ -1,0 +1,128 @@
+.experience-summary {
+  background-color: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.experience-summary:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.experience-summary__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.experience-summary__logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-color: #27272a;
+  padding: 0.5rem;
+}
+
+.experience-summary__title-group {
+  flex: 1;
+}
+
+.experience-summary__position {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fafafa;
+  margin-bottom: 0.25rem;
+}
+
+.experience-summary__company {
+  font-size: 1rem;
+  color: #a1a1aa;
+  margin-bottom: 0.25rem;
+}
+
+.experience-summary__duration {
+  font-size: 0.9rem;
+  color: #71717a;
+}
+
+.experience-summary__toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: #a1a1aa;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.experience-summary__toggle:hover,
+.experience-summary__toggle:focus {
+  color: #818cf8;
+  outline: none;
+}
+
+.experience-summary__toggle:focus-visible {
+  outline: 2px solid #818cf8;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.experience-summary__toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.experience-summary__toggle-icon--expanded {
+  transform: rotate(180deg);
+}
+
+.experience-summary__details {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding-left: calc(60px + 1.5rem); /* Align with title group */
+}
+
+.experience-summary__detail {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #d4d4d8;
+  line-height: 1.6;
+}
+
+.experience-summary__detail::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #818cf8;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .experience-summary {
+    padding: 1rem;
+  }
+
+  .experience-summary__header {
+    gap: 1rem;
+  }
+
+  .experience-summary__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .experience-summary__position {
+    font-size: 1.1rem;
+  }
+
+  .experience-summary__details {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+}
