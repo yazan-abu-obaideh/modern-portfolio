@@ -1,9 +1,10 @@
 .header {
   text-align: center;
   padding: 4rem 2rem 3rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  color: #f4f4f5;
   margin-top: 60px; /* Account for fixed nav */
+  border-bottom: 1px solid #27272a;
 }
 
 .header__name {
@@ -11,11 +12,13 @@
   font-weight: 700;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
+  color: #fafafa;
 }
 
 .header__title {
   font-size: 1.5rem;
   font-weight: 300;
+  color: #d4d4d8;
   opacity: 0.95;
 }
 

@@ -41,10 +41,11 @@ const App: React.FC = () => {
 
       <main className="main-content">
         {sections.map((section) => (
-          <Section key={section.id} id={section.id} title={section.title}>
-            {/* TODO: Add content for {section.title} */}
-            Yazan
-          </Section>
+          <Section
+            key={section.id}
+            id={section.id}
+            title={section.title}
+          >Stuff</Section>
         ))}
       </main>
     </div>
