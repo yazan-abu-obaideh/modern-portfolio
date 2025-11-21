@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Section from "./components/Section";
-import ProfessionalExperience from "./components/ProfessionalExperience";
+import { ProfessionalExperience } from "./components/ProfessionalExperience";
 import ProjectsList from "./components/ProjectsList";
 import PublicationsList from "./components/PublicationsList";
 import "./App.css";

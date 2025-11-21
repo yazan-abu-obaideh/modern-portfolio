@@ -4,26 +4,29 @@
   border-radius: 8px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  transition: box-shadow 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .experience-summary:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: #3f3f46;
 }
 
 .experience-summary__header {
   display: flex;
   align-items: flex-start;
   gap: 1.5rem;
+  position: relative;
 }
 
 .experience-summary__logo {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   flex-shrink: 0;
   border-radius: 8px;
-  background-color: #27272a;
+  background-color: #fafafa;
   padding: 0.5rem;
 }
 
@@ -39,9 +42,10 @@
 }
 
 .experience-summary__company {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #a1a1aa;
   margin-bottom: 0.25rem;
+  font-weight: 500;
 }
 
 .experience-summary__duration {
@@ -50,41 +54,65 @@
 }
 
 .experience-summary__toggle {
-  background: none;
-  border: none;
+  background-color: #27272a;
+  border: 2px solid #3f3f46;
   cursor: pointer;
-  padding: 0.5rem;
-  color: #a1a1aa;
-  transition: color 0.2s ease;
+  padding: 0.75rem 1.25rem;
+  color: #e4e4e7;
+  transition: all 0.2s ease;
   flex-shrink: 0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .experience-summary__toggle:hover,
 .experience-summary__toggle:focus {
-  color: #818cf8;
+  background-color: #818cf8;
+  border-color: #818cf8;
+  color: #fafafa;
   outline: none;
 }
 
 .experience-summary__toggle:focus-visible {
   outline: 2px solid #818cf8;
   outline-offset: 2px;
-  border-radius: 4px;
 }
 
 .experience-summary__toggle-icon {
   display: inline-block;
   transition: transform 0.3s ease;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .experience-summary__toggle-icon--expanded {
   transform: rotate(180deg);
 }
 
+.experience-summary__toggle-text {
+  font-weight: 500;
+}
+
 .experience-summary__details {
   list-style: none;
   margin-top: 1.5rem;
-  padding-left: calc(60px + 1.5rem); /* Align with title group */
+  padding-left: calc(80px + 1.5rem); /* Align with title group */
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .experience-summary__detail {
@@ -96,7 +124,7 @@
 }
 
 .experience-summary__detail::before {
-  content: '•';
+  content: "•";
   position: absolute;
   left: 0;
   color: #818cf8;
@@ -110,15 +138,22 @@
 
   .experience-summary__header {
     gap: 1rem;
+    flex-wrap: wrap;
   }
 
   .experience-summary__logo {
-    width: 48px;
-    height: 48px;
+    width: 64px;
+    height: 64px;
   }
 
   .experience-summary__position {
     font-size: 1.1rem;
+  }
+
+  .experience-summary__toggle {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
   }
 
   .experience-summary__details {
