@@ -1,11 +1,21 @@
 import React from "react";
+import { personalInfo } from "../data";
 import "./Header.css";
 
 const Header: React.FC = () => {
   return (
     <header className="header" role="banner">
-      <h1 className="header__name">Yazan Abu Obaideh</h1>
-      <p className="header__title">End-to-End Software Engineering</p>
+      <div className="header__container">
+        <img
+          src={personalInfo.profileImage}
+          alt={`${personalInfo.name} profile`}
+          className="header__image"
+        />
+        <div className="header__content">
+          <h1 className="header__name">{personalInfo.name}</h1>
+          <p className="header__title">{personalInfo.jobTitle}</p>
+        </div>
+      </div>
     </header>
   );
 };
