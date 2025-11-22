@@ -2,6 +2,8 @@ export const personalInfo = {
   name: "Yazan Abu Obaideh",
   jobTitle: "End-to-End Software Engineering",
   profileImage: "/prof_with_bg.png",
+  summary:
+    "I'm a full-stack software engineer with several A-Z projects and publications under my belt, including collaborations with the Decode Lab at MIT. I believe in the power and importance of open source and in having proper respect for one's users, their data, their attention, and their time.",
 };
 
 export const projects = [
