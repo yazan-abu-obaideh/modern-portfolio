@@ -98,11 +98,13 @@
   gap: 0.5rem;
 }
 
-.publication__toggle:hover,
-.publication__toggle:focus {
+.publication__toggle:hover {
   background-color: #818cf8;
   border-color: #818cf8;
   color: #fafafa;
+}
+
+.publication__toggle:focus {
   outline: none;
 }
 
@@ -159,6 +161,7 @@
   color: #d4d4d8;
   line-height: 1.7;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
