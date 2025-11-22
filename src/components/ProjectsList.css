@@ -28,11 +28,13 @@
   padding: 0;
 }
 
-.projects-carousel__nav:hover,
-.projects-carousel__nav:focus {
+.projects-carousel__nav:hover {
   background-color: #818cf8;
   border-color: #818cf8;
   color: #fafafa;
+}
+
+.projects-carousel__nav:focus {
   outline: none;
 }
 
@@ -99,9 +101,11 @@
   display: inline-block;
 }
 
-.project-card__title:hover,
-.project-card__title:focus {
+.project-card__title:hover {
   color: #818cf8;
+}
+
+.project-card__title:focus {
   outline: none;
 }
 
@@ -115,6 +119,7 @@
   font-size: 1rem;
   color: #d4d4d8;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .projects-carousel__dots {

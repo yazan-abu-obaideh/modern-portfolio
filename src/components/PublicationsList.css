@@ -66,10 +66,12 @@
   padding-bottom: 2px;
 }
 
-.publication__journal:hover,
-.publication__journal:focus {
+.publication__journal:hover {
   color: #a5b4fc;
   border-bottom-color: #a5b4fc;
+}
+
+.publication__journal:focus {
   outline: none;
 }
 

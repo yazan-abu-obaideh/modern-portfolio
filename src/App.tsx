@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Section from "./components/Section";
 import { ProfessionalExperience } from "./components/ProfessionalExperience";
 import ProjectsList from "./components/ProjectsList";
+import ContributionsList from "./components/ContributionsList";
 import PublicationsList from "./components/PublicationsList";
 import "./App.css";
 
@@ -13,6 +14,7 @@ const App: React.FC = () => {
   const sections = [
     { id: "experience", title: "Professional Experience" },
     { id: "projects", title: "Open-Source Projects" },
+    { id: "contributions", title: "Open-Source Contributions" },
     { id: "publications", title: "Publications" },
   ];
 
@@ -49,6 +51,10 @@ const App: React.FC = () => {
 
         <Section id="projects" title="Open-Source Projects">
           <ProjectsList />
+        </Section>
+
+        <Section id="contributions" title="Open-Source Contributions">
+          <ContributionsList />
         </Section>
 
         <Section id="publications" title="Publications">

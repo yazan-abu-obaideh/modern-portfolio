@@ -57,9 +57,11 @@
   white-space: nowrap;
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation__link:hover {
   color: #818cf8;
+}
+
+.navigation__link:focus {
   outline: none;
 }
 
@@ -103,8 +105,16 @@
     padding: 1rem 2rem;
   }
 
-  .navigation__link:hover,
+  .navigation__link:hover {
+    background-color: #27272a;
+  }
+
   .navigation__link:focus {
+    background-color: transparent;
+    outline: none;
+  }
+
+  .navigation__link:focus-visible {
     background-color: #27272a;
   }
 }

@@ -70,11 +70,13 @@
   white-space: nowrap;
 }
 
-.experience-summary__toggle:hover,
-.experience-summary__toggle:focus {
+.experience-summary__toggle:hover {
   background-color: #818cf8;
   border-color: #818cf8;
   color: #fafafa;
+}
+
+.experience-summary__toggle:focus {
   outline: none;
 }
 
