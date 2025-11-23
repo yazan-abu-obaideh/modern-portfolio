@@ -61,7 +61,7 @@ const PublicationItem: React.FC<PublicationItemProps> = ({ publication }) => {
             aria-label={isExpanded ? "Hide abstract" : "Show abstract"}
           >
             <span className="publication__toggle-text">
-              {isExpanded ? "Hide Abstract" : "Show Abstract"}
+              Abstract
             </span>
             <span
               className={`publication__toggle-icon ${

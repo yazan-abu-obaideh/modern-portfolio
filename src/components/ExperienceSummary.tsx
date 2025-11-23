@@ -39,6 +39,7 @@ const ExperienceSummary: React.FC<ExperienceSummaryProps> = ({
           aria-expanded={isExpanded}
           aria-label={isExpanded ? 'Collapse details' : 'Expand details'}
         >
+          Details
           <span className={`experience-summary__toggle-icon ${isExpanded ? 'experience-summary__toggle-icon--expanded' : ''}`}>
             ▼
           </span>

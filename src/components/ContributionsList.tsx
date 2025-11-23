@@ -70,7 +70,7 @@ const ContributionItem: React.FC<ContributionItemProps> = ({
           }
         >
           <span className="contribution__toggle-text">
-            {isExpanded ? "Hide PRs" : "Show PRs"}
+            Merge Requests
           </span>
           <span
             className={`contribution__toggle-icon ${

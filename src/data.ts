@@ -1,9 +1,17 @@
+const numberToWord = (num: number): string => {
+  const words = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+  return words[num] || num.toString();
+};
+
+
 export const personalInfo = {
   name: "Yazan Abu Obaideh",
   jobTitle: "End-to-End Software Engineering",
   profileImage: "/prof_with_bg.png",
-  summary:
-    "I'm a full-stack software engineer with several A-Z projects and publications under my belt, including collaborations with the Decode Lab at MIT. I believe in the power and importance of open source and in having proper respect for one's users, their data, their attention, and their time.",
+  summary: `
+    I'm a full-stack software engineer working since 2022, with several A-Z projects and publications 
+    under my belt, including collaborations with the Decode Lab at MIT. I believe in the power and importance of open source 
+    and in having proper respect for one's users, their data, their attention, and their time.`,
 };
 
 export const projects = [
@@ -19,7 +27,7 @@ export const projects = [
     title: "MCD Demo Site",
     githubUrl: "https://github.com/yazan-abu-obaideh/mcd-demo",
     description:
-      "A website demonstrating the capabilities of the MCD framework, including design generation from tabular data and from text prompts.",
+      "A demonstration of the capabilities of the MCD framework, including design generation from tabular data and from text prompts.",
     image: "/mcd-demo-screenshot.png",
     imageAlt: "MCD Demo Screenshot",
   },
