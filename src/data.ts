@@ -173,7 +173,7 @@ export interface Contribution {
 
 export const contributions: Contribution[] = [
   {
-    repoName: "PostHog/posthog",
+    repoName: "PostHog",
     repoUrl: "https://github.com/PostHog/posthog",
     logo: getAssetPath("/posthog-logo.png"),
     logoAlt: "Posthog logo",
@@ -226,7 +226,7 @@ export const contributions: Contribution[] = [
     ],
   },
   {
-    repoName: "supabase/supabase",
+    repoName: "Supabase",
     repoUrl: "https://github.com/supabase/supabase",
     logo: getAssetPath("/supabase-logo.png"),
     logoAlt: "Supabase logo",
