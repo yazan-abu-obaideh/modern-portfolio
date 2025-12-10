@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { projects } from "../data";
 import "./ProjectsList.css";
 
@@ -40,7 +41,7 @@ const ProjectsList: React.FC = () => {
           onClick={prevSlide}
           aria-label="Previous projects"
         >
-          {"<"}
+          <ChevronLeft />
         </button>
 
         <div className="projects-carousel__cards">
@@ -54,7 +55,7 @@ const ProjectsList: React.FC = () => {
           onClick={nextSlide}
           aria-label="Next projects"
         >
-          {">"}
+          <ChevronRight />
         </button>
       </div>
 

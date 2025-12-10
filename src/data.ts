@@ -128,9 +128,10 @@ export const experiences = [
     company: "ProgressSoft | Fintech",
     duration: "June 2022 - March 2024 and April 2024 - Present",
     details: [
-      "Led development of core platform features serving 1M+ users",
-      "Architected microservices infrastructure reducing latency by 40%",
-      "Mentored team of 5 junior engineers",
+      "Co-developed ProgressSoft's Payments Hub, a cloud-native platform that centralizes payment management for financial institutions through local and cross-border networks.",
+      "Implemented Swift messaging features for trade, treasury, and money market transactions, enabling instant payments.",
+      "Implemented ISO 20022 and MT-based messaging for seamless integration with minimal disruption to existing systems.",
+      "Practiced the agile methodology in a remote-first setting with daily meetings and CI/CD.",
     ],
   },
   {
@@ -140,9 +141,12 @@ export const experiences = [
     company: "Sigasi | Developer Tools",
     duration: "April 2024 - March 2025",
     details: [
-      "Led development of core platform features serving 1M+ users",
-      "Architected microservices infrastructure reducing latency by 40%",
-      "Mentored team of 5 junior engineers",
+      "Developed and maintained an IDE for VHDL and SystemVerilog.",
+      "Enhanced hardware design and verification processes with real-time analysis using Eclipse and VS Code APIs.",
+      "Implemented early validation of HDL code, ensuring >90% test coverage through extensive unit and integration tests.",
+      "Worked with grammar definitions, lexers, parsers, and linkers to provide rigorous static analysis, improving code reliability.",
+      "Wrote performance-sensitive code that could run on computationally constrained Windows and Linux environments.",
+      "Practiced the agile methodology in a remote-first setting with daily meetings and CI/CD.",
     ],
   },
 ];
