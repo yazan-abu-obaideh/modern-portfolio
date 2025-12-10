@@ -20,7 +20,7 @@ export const projects = [
     githubUrl: "https://decode.mit.edu/projects/counterfactuals/",
     description:
       "MCD is a framework that recommends engineering design modifications that meet multiple, customizable objectives in both the feature and performance spaces",
-    image: "/mcd-screenshot.png",
+    image: "/bike-bench-vid.gif",
     imageAlt: "MCD",
   },
   {
@@ -31,14 +31,14 @@ export const projects = [
     image: "/mcd-demo-screenshot.png",
     imageAlt: "MCD Demo Screenshot",
   },
-  {
-    title: "Code Chunker",
-    githubUrl: "https://github.com/yazan-abu-obaideh/code-chunker",
-    description:
-      "Code Chunker summarizes and breaks down your large code base into hierarchical chunks, primarily to provide your LLMs and coding agents with vastly improved system context.",
-    image: "/code-chunker-logo.jpg",
-    imageAlt: "Code Chunker logo",
-  },
+  // {
+  //   title: "Code Chunker",
+  //   githubUrl: "https://github.com/yazan-abu-obaideh/code-chunker",
+  //   description:
+  //     "Code Chunker summarizes and breaks down your large code base into hierarchical chunks, primarily to provide your LLMs and coding agents with vastly improved system context.",
+  //   image: "/code-chunker-logo.jpg",
+  //   imageAlt: "Code Chunker logo",
+  // },
   {
     title: "Lifeblood",
     githubUrl: "https://github.com/yazan-abu-obaideh/lifeblood",
@@ -60,7 +60,7 @@ export const projects = [
     githubUrl: "https://github.com/yazan-abu-obaideh/BIKED-integration",
     description:
       "BikeCAD Integration is a Python web API that provides BikeCAD with endpoints for bike design evaluation and recommendation.",
-    image: "/projects/react-lib.png",
+    image: "/bikecad-ai-image.png",
     imageAlt: "BikeCAD-AI",
   },
 ];

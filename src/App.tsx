@@ -19,18 +19,15 @@ const App: React.FC = () => {
   ];
 
   const scrollToSection = (sectionId: string) => {
+    setIsMobileMenuOpen(false);
+
     const element = document.getElementById(sectionId);
     if (element) {
-      const navHeight = 60; // Height of sticky nav
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
+      element.scrollIntoView({
+        behavior: "auto",
+        block: "start",
       });
     }
-    setIsMobileMenuOpen(false);
   };
 
   return (
