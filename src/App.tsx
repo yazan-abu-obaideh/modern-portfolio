@@ -6,6 +6,7 @@ import { ProfessionalExperience } from "./components/ProfessionalExperience";
 import ProjectsList from "./components/ProjectsList";
 import ContributionsList from "./components/ContributionsList";
 import PublicationsList from "./components/PublicationsList";
+import SkillTree from "./components/SkillTree";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -16,6 +17,7 @@ const App: React.FC = () => {
     { id: "projects", title: "Open-Source Projects" },
     { id: "contributions", title: "Open-Source Contributions" },
     { id: "publications", title: "Publications" },
+    { id: "skill-tree", title: "Skill Tree" },
   ];
 
   const scrollToSection = (sectionId: string) => {
@@ -56,6 +58,10 @@ const App: React.FC = () => {
 
         <Section id="publications" title="Publications">
           <PublicationsList />
+        </Section>
+
+        <Section id="skill-tree" title="Skill Tree">
+          <SkillTree />
         </Section>
       </main>
     </div>

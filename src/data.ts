@@ -241,3 +241,200 @@ export const contributions: Contribution[] = [
     ],
   },
 ];
+
+// Skill Tree Data Structures
+
+export interface SkillNode {
+  id: string;
+  name: string;
+  category: string;
+  proficiency: number; // 1-5 scale
+  description: string;
+}
+
+export interface SkillConnection {
+  source: string;
+  target: string;
+  type: "prerequisite" | "related" | "complementary";
+}
+
+export interface SkillCategory {
+  id: string;
+  name: string;
+  color: string;
+}
+
+export const skillCategories: SkillCategory[] = [
+  { id: "language", name: "Languages", color: "#818cf8" },      // Indigo
+  { id: "framework", name: "Frameworks", color: "#60a5fa" },    // Blue
+  { id: "tool", name: "Tools", color: "#34d399" },              // Green
+  { id: "database", name: "Databases", color: "#fbbf24" },      // Amber
+  { id: "concept", name: "Methodologies", color: "#f472b6" },   // Pink
+];
+
+export const skills: SkillNode[] = [
+  {
+    id: "java",
+    name: "Java",
+    category: "language",
+    proficiency: 5,
+    description: "Primary backend language for enterprise applications",
+  },
+  {
+    id: "typescript",
+    name: "TypeScript",
+    category: "language",
+    proficiency: 5,
+    description: "Type-safe JavaScript for modern web development",
+  },
+  {
+    id: "python",
+    name: "Python",
+    category: "language",
+    proficiency: 5,
+    description: "Machine learning and data science projects",
+  },
+  {
+    id: "vhdl",
+    name: "VHDL",
+    category: "language",
+    proficiency: 4,
+    description: "Hardware description language for digital circuits",
+  },
+  {
+    id: "systemverilog",
+    name: "SystemVerilog",
+    category: "language",
+    proficiency: 4,
+    description: "Hardware verification and design language",
+  },
+  {
+    id: "spring-boot",
+    name: "Spring Boot",
+    category: "framework",
+    proficiency: 5,
+    description: "Enterprise Java framework for cloud-native applications",
+  },
+  {
+    id: "react",
+    name: "React",
+    category: "framework",
+    proficiency: 5,
+    description: "Modern UI library for building interactive interfaces",
+  },
+  {
+    id: "eclipse",
+    name: "Eclipse",
+    category: "framework",
+    proficiency: 4,
+    description: "IDE platform and API for developer tools",
+  },
+  {
+    id: "vscode",
+    name: "VS Code",
+    category: "framework",
+    proficiency: 4,
+    description: "Extensible code editor with powerful APIs",
+  },
+  {
+    id: "docker",
+    name: "Docker",
+    category: "tool",
+    proficiency: 5,
+    description: "Containerization for consistent deployment environments",
+  },
+  {
+    id: "kubernetes",
+    name: "Kubernetes",
+    category: "tool",
+    proficiency: 4,
+    description: "Container orchestration for cloud-native applications",
+  },
+  {
+    id: "git",
+    name: "Git",
+    category: "tool",
+    proficiency: 5,
+    description: "Version control for collaborative development",
+  },
+  {
+    id: "postgresql",
+    name: "PostgreSQL",
+    category: "database",
+    proficiency: 5,
+    description: "Robust relational database for enterprise applications",
+  },
+  {
+    id: "mongodb",
+    name: "MongoDB",
+    category: "database",
+    proficiency: 4,
+    description: "NoSQL database for flexible data models",
+  },
+  {
+    id: "redis",
+    name: "Redis",
+    category: "database",
+    proficiency: 4,
+    description: "In-memory data store for caching and real-time applications",
+  },
+  {
+    id: "agile",
+    name: "Agile/Scrum",
+    category: "concept",
+    proficiency: 5,
+    description: "Iterative development methodology with daily standups",
+  },
+  {
+    id: "cicd",
+    name: "CI/CD",
+    category: "concept",
+    proficiency: 5,
+    description: "Continuous integration and deployment practices",
+  },
+  {
+    id: "iso20022",
+    name: "ISO 20022",
+    category: "concept",
+    proficiency: 5,
+    description: "International standard for financial messaging",
+  },
+];
+
+export const skillConnections: SkillConnection[] = [
+  // Language to Framework connections
+  { source: "java", target: "spring-boot", type: "prerequisite" },
+  { source: "typescript", target: "react", type: "prerequisite" },
+  { source: "java", target: "eclipse", type: "related" },
+  { source: "vhdl", target: "eclipse", type: "related" },
+  { source: "systemverilog", target: "eclipse", type: "related" },
+  { source: "vhdl", target: "vscode", type: "related" },
+  { source: "systemverilog", target: "vscode", type: "related" },
+
+  // Framework to Tool connections
+  { source: "spring-boot", target: "docker", type: "complementary" },
+  { source: "react", target: "docker", type: "complementary" },
+  { source: "docker", target: "kubernetes", type: "prerequisite" },
+
+  // Database connections
+  { source: "spring-boot", target: "postgresql", type: "related" },
+  { source: "spring-boot", target: "mongodb", type: "related" },
+  { source: "spring-boot", target: "redis", type: "related" },
+  { source: "postgresql", target: "redis", type: "complementary" },
+
+  // Development process connections
+  { source: "git", target: "cicd", type: "prerequisite" },
+  { source: "docker", target: "cicd", type: "related" },
+  { source: "kubernetes", target: "cicd", type: "related" },
+  { source: "agile", target: "cicd", type: "complementary" },
+  { source: "agile", target: "git", type: "related" },
+
+  // Cross-stack connections
+  { source: "react", target: "spring-boot", type: "complementary" },
+  { source: "python", target: "postgresql", type: "related" },
+  { source: "python", target: "mongodb", type: "related" },
+
+  // Financial domain connections
+  { source: "spring-boot", target: "iso20022", type: "related" },
+  { source: "java", target: "iso20022", type: "related" },
+];
